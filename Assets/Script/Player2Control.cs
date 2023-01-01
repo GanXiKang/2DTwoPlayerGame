@@ -2,25 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player1Control : MonoBehaviour
+public class Player2Control : MonoBehaviour
 {
     private float speed = 5f;
-    private float jump = 8f ;
+    private float jump = 8f;
     void Start()
     {
         
     }
     void Update()
     {
-        if (Input.GetKey("a"))
+        if (Input.GetKey("left"))
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0);
         }
-        if (Input.GetKey("d"))
+        if (Input.GetKey("right"))
         {
             transform.Translate(speed * Time.deltaTime, 0, 0);
         }
-        if (Input.GetKey("w"))
+        if (Input.GetKey("up"))
         {
             transform.Translate(0, jump * Time.deltaTime, 0);
         }
