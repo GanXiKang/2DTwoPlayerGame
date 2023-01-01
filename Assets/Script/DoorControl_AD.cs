@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorControl : MonoBehaviour
+public class DoorControl_AD : MonoBehaviour
 {
     public GameObject door;
 
-    bool isOpen;          
+    bool isOpen;
     bool isSwitch;                                   //true = È_£ªfalse = ÍP
 
     void Start()
@@ -44,7 +44,7 @@ public class DoorControl : MonoBehaviour
             {
                 isSwitch = true;
             }
-            else 
+            else
             {
                 isSwitch = false;
             }
@@ -52,13 +52,13 @@ public class DoorControl : MonoBehaviour
     }
     IEnumerator OpenDoor()
     {
-        door.transform.position = new Vector2(door.transform.position.x + 1f * Time.deltaTime, door.transform.position.y);
+        door.transform.position = new Vector2(door.transform.position.x + -1f * Time.deltaTime, door.transform.position.y);
         yield return new WaitForSeconds(2.4f);
         isOpen = false;
     }
     IEnumerator CloseDoor()
     {
-        door.transform.position = new Vector2(door.transform.position.x + -1f * Time.deltaTime, door.transform.position.y);
+        door.transform.position = new Vector2(door.transform.position.x + 1f * Time.deltaTime, door.transform.position.y);
         yield return new WaitForSeconds(2.4f);
         isOpen = false;
     }
