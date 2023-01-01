@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player2Control : MonoBehaviour
 {
     private float speed = 5f;
-    private float jump = 7f;
+    private float jump = 8f;
     void Start()
     {
         
