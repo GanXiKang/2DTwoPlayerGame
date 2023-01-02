@@ -13,7 +13,7 @@ public class TerminalControl : MonoBehaviour
 
         if (isPlayer1 == true && isPlayer2 == true && coins.Length == 0)
         {
-            Debug.Log("Win");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
