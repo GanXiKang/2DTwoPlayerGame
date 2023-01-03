@@ -16,23 +16,26 @@ public class DoorControl_AD : MonoBehaviour
     }
     void Update()
     {
-        if (isOpen == true && isSwitch == true)
-        {
-            StartCoroutine(OpenDoor());
-        }
-        else
-        {
-            StopCoroutine(OpenDoor());
-        }
+            if (isOpen == true && isSwitch == true)
+            {
 
-        if (isOpen == true && isSwitch == false)
-        {
-            StartCoroutine(CloseDoor());
-        }
-        else
-        {
-            StopCoroutine(CloseDoor());
-        }
+                StartCoroutine(OpenDoor());
+            }
+            else
+            {
+                StopCoroutine(OpenDoor());
+            }
+
+            if (isOpen == true && isSwitch == false)
+            {
+
+                StartCoroutine(CloseDoor());
+
+            }
+            else
+            {
+                StopCoroutine(CloseDoor());
+            }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
