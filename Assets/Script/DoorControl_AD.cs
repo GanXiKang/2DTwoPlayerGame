@@ -61,8 +61,10 @@ public class DoorControl_AD : MonoBehaviour
     }
     IEnumerator CloseDoor()
     {
+
         door.transform.position = new Vector2(door.transform.position.x + 1f * Time.deltaTime, door.transform.position.y);
         yield return new WaitForSeconds(2.4f);
         isOpen = false;
+
     }
 }
