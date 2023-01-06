@@ -13,18 +13,22 @@ public class SwitchControl : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if (isP1)
+            if (isP1 == true)
             {
-                p1.gameObject.SetActive(false);
-                p2.gameObject.SetActive(true);
-                isP1 = false;
+                StartCoroutine(Up());
             }
             else
             {
                 p2.gameObject.SetActive(false);
                 p1.gameObject.SetActive(true);
-                isP1 = true;
             }
         }
+    }
+    IEnumerator Up()
+    {
+        p1.gameObject.SetActive(false);
+        p2.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2.4f);
+        isP1 = false;
     }
 }
