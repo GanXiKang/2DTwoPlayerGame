@@ -9,6 +9,9 @@ public class TerminalControl : MonoBehaviour
     public GameObject p2;
     public GameObject p3;
 
+    public AudioSource bGM;
+    public AudioClip open;
+
     bool isPlayer1;
     bool isPlayer2;
 
@@ -50,6 +53,7 @@ public class TerminalControl : MonoBehaviour
     }
     IEnumerator OpenTerminal()
     {
+        //bGM.PlayOneShot(open);
         p1.gameObject.SetActive(false);
         p2.gameObject.SetActive(true);
         yield return new WaitForSeconds(2f);
