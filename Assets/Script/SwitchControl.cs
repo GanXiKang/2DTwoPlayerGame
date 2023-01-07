@@ -15,12 +15,13 @@ public class SwitchControl : MonoBehaviour
         {
             if (isP1 == true)
             {
+                StopCoroutine(Down());
                 StartCoroutine(Up());
             }
             else
             {
-                p2.gameObject.SetActive(false);
-                p1.gameObject.SetActive(true);
+                StopCoroutine(Up());
+                StartCoroutine(Down());
             }
         }
     }
@@ -28,7 +29,20 @@ public class SwitchControl : MonoBehaviour
     {
         p1.gameObject.SetActive(false);
         p2.gameObject.SetActive(true);
+        Debug.Log("wait");
+        isP1 = true;
         yield return new WaitForSeconds(2.4f);
+        Debug.Log("ok");
         isP1 = false;
+    }
+    IEnumerator Down()
+    {
+        p2.gameObject.SetActive(false);
+        p1.gameObject.SetActive(true);
+        Debug.Log("wait");
+        isP1 = false;
+        yield return new WaitForSeconds(2.4f);
+        Debug.Log("ok");
+        isP1 = true;
     }
 }
