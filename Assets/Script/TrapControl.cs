@@ -15,7 +15,7 @@ public class TrapControl : MonoBehaviour
             bGM.PlayOneShot(die);
             collision.gameObject.SetActive(false);
             Destroy(collision.gameObject);
-
+            StartCoroutine(PlayerDied());
         }
     }
     IEnumerator PlayerDied()

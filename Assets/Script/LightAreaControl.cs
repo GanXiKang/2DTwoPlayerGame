@@ -17,10 +17,10 @@ public class LightAreaControl : MonoBehaviour
             Destroy(collision.gameObject);
             StartCoroutine(PlayerDied());
         }
-        IEnumerator PlayerDied()
-        {
-            yield return new WaitForSeconds(3f);
-            dieUI.gameObject.SetActive(true);
-        }
+    }
+    IEnumerator PlayerDied()
+    {
+        yield return new WaitForSeconds(3f);
+        dieUI.gameObject.SetActive(true);
     }
 }
