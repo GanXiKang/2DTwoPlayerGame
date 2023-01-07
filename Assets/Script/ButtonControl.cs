@@ -11,7 +11,7 @@ public class ButtonControl : MonoBehaviour
     }
     public void HowToPlay()
     {
-        
+        SceneManager.LoadScene(5);
     }
     public void Quit()
     {
