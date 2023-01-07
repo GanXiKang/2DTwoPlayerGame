@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Player2Control : MonoBehaviour
 {
+    public AudioSource bGM;
+    public AudioClip j;
+
     private float speed = 5f;
     private float jump = 8f;
-    void Start()
-    {
-        
-    }
+
     void Update()
     {
         if (Input.GetKey("left"))
@@ -22,6 +22,7 @@ public class Player2Control : MonoBehaviour
         }
         if (Input.GetKey("up"))
         {
+            bGM.PlayOneShot(j);
             transform.Translate(0, jump * Time.deltaTime, 0);
         }
     }

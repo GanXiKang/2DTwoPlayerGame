@@ -2170,6 +2170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df602e2cf946f29468514224f3071214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  j: {fileID: 8300000, guid: bfb49e9df4798f44ca9f483fc8d6f933, type: 3}
 --- !u!1 &824023907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,6 +2356,8 @@ MonoBehaviour:
   p1: {fileID: 2019418172}
   p2: {fileID: 855904570}
   p3: {fileID: 1412634661}
+  bGM: {fileID: 961648586}
+  open: {fileID: 8300000, guid: 818691574347bef429446f77dcb84d83, type: 3}
 --- !u!1 &856412785
 GameObject:
   m_ObjectHideFlags: 0
@@ -4043,6 +4047,8 @@ MonoBehaviour:
   p1: {fileID: 2019418172}
   p2: {fileID: 855904570}
   p3: {fileID: 1412634661}
+  bGM: {fileID: 961648586}
+  open: {fileID: 8300000, guid: 818691574347bef429446f77dcb84d83, type: 3}
 --- !u!1 &1417338843
 GameObject:
   m_ObjectHideFlags: 0
@@ -4570,6 +4576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7cbc10a465924b4aaf6dfb6608502f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  j: {fileID: 8300000, guid: bfb49e9df4798f44ca9f483fc8d6f933, type: 3}
 --- !u!50 &1626970187
 Rigidbody2D:
   serializedVersion: 4
@@ -5473,6 +5481,8 @@ MonoBehaviour:
   p1: {fileID: 2019418172}
   p2: {fileID: 855904570}
   p3: {fileID: 1412634661}
+  bGM: {fileID: 961648586}
+  open: {fileID: 8300000, guid: 818691574347bef429446f77dcb84d83, type: 3}
 --- !u!50 &2019418174
 Rigidbody2D:
   serializedVersion: 4

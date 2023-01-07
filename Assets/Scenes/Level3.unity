@@ -570,6 +570,8 @@ MonoBehaviour:
   p1: {fileID: 434864698}
   p2: {fileID: 1626640459}
   p3: {fileID: 107287915}
+  bGM: {fileID: 961648586}
+  open: {fileID: 8300000, guid: eeded60de806d7b4b8b4c5d51cc3c0e8, type: 3}
 --- !u!61 &107287918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1654,6 +1656,8 @@ MonoBehaviour:
   p1: {fileID: 434864698}
   p2: {fileID: 1626640459}
   p3: {fileID: 107287915}
+  bGM: {fileID: 961648586}
+  open: {fileID: 8300000, guid: eeded60de806d7b4b8b4c5d51cc3c0e8, type: 3}
 --- !u!50 &434864700
 Rigidbody2D:
   serializedVersion: 4
@@ -4395,6 +4399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7cbc10a465924b4aaf6dfb6608502f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  j: {fileID: 8300000, guid: bfb49e9df4798f44ca9f483fc8d6f933, type: 3}
 --- !u!50 &1619952085
 Rigidbody2D:
   serializedVersion: 4
@@ -4544,6 +4550,8 @@ MonoBehaviour:
   p1: {fileID: 434864698}
   p2: {fileID: 1626640459}
   p3: {fileID: 107287915}
+  bGM: {fileID: 961648586}
+  open: {fileID: 8300000, guid: eeded60de806d7b4b8b4c5d51cc3c0e8, type: 3}
 --- !u!61 &1626640461
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4690,6 +4698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df602e2cf946f29468514224f3071214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  j: {fileID: 8300000, guid: bfb49e9df4798f44ca9f483fc8d6f933, type: 3}
 --- !u!61 &1646959158
 BoxCollider2D:
   m_ObjectHideFlags: 0
