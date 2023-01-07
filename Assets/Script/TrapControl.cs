@@ -6,6 +6,7 @@ public class TrapControl : MonoBehaviour
 {
     public AudioSource bGM;
     public AudioClip die;
+    public GameObject dieUI;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +15,12 @@ public class TrapControl : MonoBehaviour
             bGM.PlayOneShot(die);
             collision.gameObject.SetActive(false);
             Destroy(collision.gameObject);
+
         }
+    }
+    IEnumerator PlayerDied()
+    {
+        yield return new WaitForSeconds(3f);
+        dieUI.gameObject.SetActive(true);
     }
 }

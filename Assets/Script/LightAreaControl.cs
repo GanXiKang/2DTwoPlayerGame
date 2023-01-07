@@ -6,6 +6,7 @@ public class LightAreaControl : MonoBehaviour
 {
     public AudioSource bGM;
     public AudioClip die;
+    public GameObject dieUI;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +15,12 @@ public class LightAreaControl : MonoBehaviour
             bGM.PlayOneShot(die);
             collision.gameObject.SetActive(false);
             Destroy(collision.gameObject);
+            StartCoroutine(PlayerDied());
+        }
+        IEnumerator PlayerDied()
+        {
+            yield return new WaitForSeconds(3f);
+            dieUI.gameObject.SetActive(true);
         }
     }
 }
