@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonControl : MonoBehaviour
 {
-    public void Start()
+    public void onStart()
     {
         SceneManager.LoadScene(1);
     }
