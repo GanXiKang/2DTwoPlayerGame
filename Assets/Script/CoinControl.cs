@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class CoinControl : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+    public AudioSource bGM;
+    public AudioClip coin;
+
     void Update()
     {
         transform.Rotate(0, 45f * Time.deltaTime, 0);
@@ -16,6 +15,7 @@ public class CoinControl : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            bGM.PlayOneShot(coin);
             gameObject.SetActive(false);
             Destroy(gameObject);
         }

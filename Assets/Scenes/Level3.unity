@@ -1071,6 +1071,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3788be18f861d4e97ff6bf55994e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  coin: {fileID: 8300000, guid: dc9e67656cfc58e4c90027709db403fb, type: 3}
 --- !u!212 &220772537
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5546,6 +5548,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3788be18f861d4e97ff6bf55994e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  coin: {fileID: 8300000, guid: dc9e67656cfc58e4c90027709db403fb, type: 3}
 --- !u!212 &1824481171
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6028,6 +6032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3788be18f861d4e97ff6bf55994e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  coin: {fileID: 8300000, guid: dc9e67656cfc58e4c90027709db403fb, type: 3}
 --- !u!212 &1955036549
 SpriteRenderer:
   m_ObjectHideFlags: 0
