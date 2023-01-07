@@ -6,14 +6,9 @@ public class DoorControl_WS : MonoBehaviour
 {
     public GameObject door;
 
-    bool isOpen;
-    bool isSwitch;
+    bool isOpen = false;
+    bool isSwitch = false;
 
-    void Start()
-    {
-        isOpen = false;
-        isSwitch = false;
-    }
     void Update()
     {
         if (isOpen == true && isSwitch == true)

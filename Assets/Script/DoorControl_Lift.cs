@@ -6,8 +6,8 @@ public class DoorControl_Lift : MonoBehaviour
 {
     public GameObject door;
 
-    bool isOpen;
-    bool isSwitch;
+    bool isOpen = false;
+    bool isSwitch = false;
 
     void Start()
     {

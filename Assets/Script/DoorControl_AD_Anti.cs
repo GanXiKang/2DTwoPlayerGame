@@ -6,14 +6,9 @@ public class DoorControl_AD_Anti : MonoBehaviour
 {
     public GameObject door;
 
-    bool isOpen;
-    bool isSwitch;                                   //true = È_£ªfalse = ÍP
+    bool isOpen = false;
+    bool isSwitch = false;                                   //true = È_£ªfalse = ÍP
 
-    void Start()
-    {
-        isOpen = false;
-        isSwitch = false;
-    }
     void Update()
     {
         if (isOpen == true && isSwitch == true)
