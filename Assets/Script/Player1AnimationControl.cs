@@ -22,5 +22,9 @@ public class Player1AnimationControl : MonoBehaviour
         {
             anim.SetBool("Die", true);
         }
+        else
+        {
+            anim.SetBool("Die", false);
+        }
     }
 }

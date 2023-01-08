@@ -5,15 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class GameControl_LV2 : MonoBehaviour
 {
-    void Start()
-    {
-
-    }
     void Update()
     {
         if (Input.GetKeyDown("f1"))
         {
             SceneManager.LoadScene(2);
+
+            LightAreaControl.player2Die = false;
+            DrakAreaControl.player1Die = false;
+            TrapControl.player1Die = false;
+            TrapControl.player2Die = false;
         }
     }
 }
