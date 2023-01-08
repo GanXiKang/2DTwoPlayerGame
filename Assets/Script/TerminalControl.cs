@@ -53,7 +53,7 @@ public class TerminalControl : MonoBehaviour
     }
     IEnumerator OpenTerminal()
     {
-        bGM.PlayOneShot(open);
+        //bGM.PlayOneShot(open);
         p1.gameObject.SetActive(false);
         p2.gameObject.SetActive(true);
         yield return new WaitForSeconds(2f);
