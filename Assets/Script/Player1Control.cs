@@ -9,13 +9,20 @@ public class Player1Control : MonoBehaviour
 
     private float speed = 5f;
     private float jump = 8f ;
-
+    private Rigidbody2D rb2D;
+    private Animator anim;
+     void Start()
+    {
+        rb2D = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
         if (Input.GetKey("a"))
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0);
+            //anim.SetBool("Walk", true);
         }
         if (Input.GetKey("d"))
         {
