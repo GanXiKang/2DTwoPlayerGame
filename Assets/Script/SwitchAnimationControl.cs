@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SwitchAnimationControl : MonoBehaviour
 {
+    public AudioSource bGM;
+    public AudioClip sw;
+
     private Animator anim;
 
     private bool isSwitchDown = false;
@@ -27,6 +30,7 @@ public class SwitchAnimationControl : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            bGM.PlayOneShot(sw);
             if (isSwitchDown == false)
             {
                 isSwitchDown = true;
