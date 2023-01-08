@@ -8,7 +8,7 @@ public class Player1Control : MonoBehaviour
     public AudioClip j;
 
     private float speed = 5f;
-    private float jump = 8f ;
+    private float jump = 7f ;
     private Rigidbody2D rb2D;
 
     void Start()
@@ -28,10 +28,11 @@ public class Player1Control : MonoBehaviour
             transform.Translate(-speed * Time.deltaTime, 0, 0);
             transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
-        if (Input.GetKey("w"))
+        if (Input.GetKeyDown("w"))
         {
             bGM.PlayOneShot(j);
-            transform.Translate(0, jump * Time.deltaTime, 0);
+            Vector2 jumpHigh = new Vector2(0, jump);
+            rb2D.velocity = Vector2.up * jumpHigh;
         }
     }
 }
