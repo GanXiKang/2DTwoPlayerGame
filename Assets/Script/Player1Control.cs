@@ -9,12 +9,10 @@ public class Player1Control : MonoBehaviour
 
     private float speed = 5f;
     private float jump = 8f ;
-    private Rigidbody2D rb2D;
-    private Animator anim;
+
      void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        
     }
 
     void Update()
@@ -22,11 +20,12 @@ public class Player1Control : MonoBehaviour
         if (Input.GetKey("a"))
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0);
-            //anim.SetBool("Walk", true);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         if (Input.GetKey("d"))
         {
-            transform.Translate(speed * Time.deltaTime, 0, 0);
+            transform.Translate(-speed * Time.deltaTime, 0, 0);
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
         if (Input.GetKey("w"))
         {
