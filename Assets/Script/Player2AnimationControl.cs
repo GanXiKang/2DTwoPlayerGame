@@ -14,9 +14,10 @@ public class Player2AnimationControl : MonoBehaviour
     {
         anim.SetBool("Walk", false);
 
-        if (Input.GetKey("a") || Input.GetKey("d"))
+        if (Input.GetKey("left") || Input.GetKey("right"))
         {
             anim.SetBool("Walk", true);
         }
+       
     }
 }

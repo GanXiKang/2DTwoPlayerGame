@@ -1511,7 +1511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7cbc10a465924b4aaf6dfb6608502f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bGM: {fileID: 0}
+  bGM: {fileID: 961648586}
   j: {fileID: 8300000, guid: bfb49e9df4798f44ca9f483fc8d6f933, type: 3}
 --- !u!50 &401508283
 Rigidbody2D:
@@ -3065,7 +3065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df602e2cf946f29468514224f3071214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bGM: {fileID: 0}
+  bGM: {fileID: 961648586}
   j: {fileID: 8300000, guid: bfb49e9df4798f44ca9f483fc8d6f933, type: 3}
 --- !u!61 &1075605549
 BoxCollider2D:
