@@ -889,6 +889,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 660964483}
+  p1: {fileID: 1075605545}
 --- !u!61 &248248224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1882,6 +1883,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 660964483}
+  p2: {fileID: 401508279}
 --- !u!61 &510784818
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2669,6 +2671,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 660964483}
+  p1: {fileID: 1075605545}
 --- !u!61 &941857835
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3230,6 +3233,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 660964483}
+  p2: {fileID: 401508279}
 --- !u!61 &1098430398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3630,6 +3634,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 660964483}
+  p2: {fileID: 401508279}
 --- !u!1 &1273290337
 GameObject:
   m_ObjectHideFlags: 0
@@ -4204,6 +4209,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 660964483}
+  p1: {fileID: 1075605545}
 --- !u!61 &1341351951
 BoxCollider2D:
   m_ObjectHideFlags: 0

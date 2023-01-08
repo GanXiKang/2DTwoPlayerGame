@@ -431,6 +431,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 1221935395}
+  p2: {fileID: 1626970183}
 --- !u!61 &96142454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -772,9 +773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421dbb9b6d4f6974488371f09eb0350f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1: {fileID: 328138507}
-  p2: {fileID: 0}
-  isP1: 1
 --- !u!1 &335258181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,6 +1494,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 1221935395}
+  p1: {fileID: 700881784}
 --- !u!61 &620579278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1956,6 +1955,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 1221935395}
+  p1: {fileID: 700881784}
 --- !u!61 &685287591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2673,6 +2673,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 1221935395}
+  p1: {fileID: 700881784}
 --- !u!61 &941857835
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3594,6 +3595,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 1221935395}
+  p2: {fileID: 1626970183}
 --- !u!61 &1230119547
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3799,6 +3801,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 1221935395}
+  p2: {fileID: 1626970183}
 --- !u!1 &1292284328
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,6 +4569,7 @@ MonoBehaviour:
   bGM: {fileID: 961648586}
   die: {fileID: 8300000, guid: 57154fb13af6eb94283661c5859cee45, type: 3}
   dieUI: {fileID: 1221935395}
+  p1: {fileID: 700881784}
 --- !u!61 &1546850663
 BoxCollider2D:
   m_ObjectHideFlags: 0
