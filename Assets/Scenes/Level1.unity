@@ -669,6 +669,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3abac983a98d0041918c4ff1b707196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  sw: {fileID: 8300000, guid: 86129c650f0266f48bee600552b26920, type: 3}
 --- !u!1 &335258181
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,6 +904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3abac983a98d0041918c4ff1b707196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  sw: {fileID: 8300000, guid: 86129c650f0266f48bee600552b26920, type: 3}
 --- !u!95 &408940443
 Animator:
   serializedVersion: 4
@@ -2719,6 +2723,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3abac983a98d0041918c4ff1b707196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  sw: {fileID: 8300000, guid: 86129c650f0266f48bee600552b26920, type: 3}
 --- !u!95 &980077556
 Animator:
   serializedVersion: 4
@@ -2878,6 +2884,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3abac983a98d0041918c4ff1b707196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  sw: {fileID: 8300000, guid: 86129c650f0266f48bee600552b26920, type: 3}
 --- !u!95 &1028753619
 Animator:
   serializedVersion: 4
@@ -3161,6 +3169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3abac983a98d0041918c4ff1b707196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  sw: {fileID: 8300000, guid: 86129c650f0266f48bee600552b26920, type: 3}
 --- !u!95 &1088428041
 Animator:
   serializedVersion: 4
@@ -4981,6 +4991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3abac983a98d0041918c4ff1b707196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bGM: {fileID: 961648586}
+  sw: {fileID: 8300000, guid: 86129c650f0266f48bee600552b26920, type: 3}
 --- !u!95 &1918711772
 Animator:
   serializedVersion: 4
