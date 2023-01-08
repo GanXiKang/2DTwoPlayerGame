@@ -15,10 +15,12 @@ public class Player2Control : MonoBehaviour
         if (Input.GetKey("left"))
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         if (Input.GetKey("right"))
         {
-            transform.Translate(speed * Time.deltaTime, 0, 0);
+            transform.Translate(-speed * Time.deltaTime, 0, 0);
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
         if (Input.GetKey("up"))
         {
