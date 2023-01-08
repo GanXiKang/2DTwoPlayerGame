@@ -9,7 +9,7 @@ public class LightAreaControl : MonoBehaviour
     public GameObject dieUI;
     public GameObject p2;
 
-    public static bool playerDie = false;
+    public static bool player2Die = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,7 +20,7 @@ public class LightAreaControl : MonoBehaviour
     }
     IEnumerator PlayerDied()
     {
-        playerDie = true;
+        player2Die = true;
         bGM.PlayOneShot(die);
         yield return new WaitForSeconds(2f);
         p2.gameObject.SetActive(false);

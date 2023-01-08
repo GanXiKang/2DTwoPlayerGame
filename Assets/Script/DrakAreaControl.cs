@@ -9,7 +9,7 @@ public class DrakAreaControl : MonoBehaviour
     public GameObject dieUI;
     public GameObject p1;
 
-    public static bool playerDie;
+    public static bool player1Die = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,7 +22,7 @@ public class DrakAreaControl : MonoBehaviour
     IEnumerator PlayerDied()
     {
         bGM.PlayOneShot(die);
-        playerDie = true;
+        player1Die = true;
         yield return new WaitForSeconds(2f);
         p1.gameObject.SetActive(false);
         Destroy(p1.gameObject);

@@ -19,7 +19,7 @@ public class Player2AnimationControl : MonoBehaviour
             anim.SetBool("Walk", true);
         }
 
-        if (LightAreaControl.playerDie == true)
+        if (LightAreaControl.player2Die == true || TrapControl.player2Die == true)
         {
             anim.SetBool("Die", true);
         }

@@ -18,7 +18,7 @@ public class Player1AnimationControl : MonoBehaviour
         {
             anim.SetBool("Walk", true);
         }
-        if (DrakAreaControl.playerDie == true)
+        if (DrakAreaControl.player1Die == true || TrapControl.player1Die == true)
         {
             anim.SetBool("Die", true);
         }
