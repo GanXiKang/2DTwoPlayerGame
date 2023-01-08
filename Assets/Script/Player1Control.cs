@@ -9,10 +9,11 @@ public class Player1Control : MonoBehaviour
 
     private float speed = 5f;
     private float jump = 8f ;
+    private Rigidbody2D rb2D;
 
-     void Start()
+    void Start()
     {
-        
+        rb2D = GetComponent<Rigidbody2D>();
     }
 
     void Update()
