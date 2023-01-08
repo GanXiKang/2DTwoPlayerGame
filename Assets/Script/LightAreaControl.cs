@@ -7,20 +7,25 @@ public class LightAreaControl : MonoBehaviour
     public AudioSource bGM;
     public AudioClip die;
     public GameObject dieUI;
+    public GameObject p2;
+
+    public static bool PlayerDie = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player2")
         {
-            bGM.PlayOneShot(die);
-            collision.gameObject.SetActive(false);
-            Destroy(collision.gameObject);
             StartCoroutine(PlayerDied());
         }
     }
     IEnumerator PlayerDied()
     {
-        yield return new WaitForSeconds(3f);
+        PlayerDie = true;
+        bGM.PlayOneShot(die);
+        yield return new WaitForSeconds(2f);
+        p2.gameObject.SetActive(false);
+        Destroy(p2.gameObject);
+        yield return new WaitForSeconds(2f);
         dieUI.gameObject.SetActive(true);
     }
 }
