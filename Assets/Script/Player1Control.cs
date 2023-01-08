@@ -10,6 +10,7 @@ public class Player1Control : MonoBehaviour
     private float speed = 5f;
     private float jump = 8f ;
 
+
     void Update()
     {
         if (Input.GetKey("a"))
