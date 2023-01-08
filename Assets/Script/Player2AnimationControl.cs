@@ -19,7 +19,7 @@ public class Player2AnimationControl : MonoBehaviour
             anim.SetBool("Walk", true);
         }
 
-        if (LightAreaControl.PlayerDie == true)
+        if (LightAreaControl.playerDie == true)
         {
             anim.SetBool("Die", true);
         }

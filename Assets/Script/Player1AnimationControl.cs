@@ -18,5 +18,9 @@ public class Player1AnimationControl : MonoBehaviour
         {
             anim.SetBool("Walk", true);
         }
+        if (DrakAreaControl.playerDie == true)
+        {
+            anim.SetBool("Die", true);
+        }
     }
 }

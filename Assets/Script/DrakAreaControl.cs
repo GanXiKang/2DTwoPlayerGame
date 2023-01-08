@@ -7,20 +7,26 @@ public class DrakAreaControl : MonoBehaviour
     public AudioSource bGM;
     public AudioClip die;
     public GameObject dieUI;
+    public GameObject p1;
+
+    public static bool playerDie;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player1")
         {
-            bGM.PlayOneShot(die);
-            collision.gameObject.SetActive(false);
-            Destroy(collision.gameObject);
+            
             StartCoroutine(PlayerDied());
         }
     }
     IEnumerator PlayerDied()
     {
-        yield return new WaitForSeconds(3f);
+        bGM.PlayOneShot(die);
+        playerDie = true;
+        yield return new WaitForSeconds(2f);
+        p1.gameObject.SetActive(false);
+        Destroy(p1.gameObject);
+        yield return new WaitForSeconds(1f);
         dieUI.gameObject.SetActive(true);
     }
 }
