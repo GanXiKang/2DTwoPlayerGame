@@ -6,7 +6,7 @@ public class SwitchAnimationControl : MonoBehaviour
 {
     private Animator anim;
 
-    bool isSwitch = false;
+    private bool isSwitchDown = false;
 
     void Start()
     {
@@ -14,7 +14,7 @@ public class SwitchAnimationControl : MonoBehaviour
     }
     void Update()
     {
-        if (isSwitch == true)
+        if (isSwitchDown == true)
         {
             anim.SetBool("open", true);
         }
@@ -27,13 +27,13 @@ public class SwitchAnimationControl : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if (isSwitch == false)
+            if (isSwitchDown == false)
             {
-                isSwitch = true;
+                isSwitchDown = true;
             }
             else
             {
-                isSwitch = false;
+                isSwitchDown = false;
             }
         }
     }
