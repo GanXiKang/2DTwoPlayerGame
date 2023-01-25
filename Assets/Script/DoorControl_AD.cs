@@ -5,6 +5,8 @@ using UnityEngine;
 public class DoorControl_AD : MonoBehaviour
 {
     public GameObject door;
+    public Transform target;
+    public Transform asUsual;
 
     private bool isOpen = false;
     private bool isSwitch = false;                                   //true = È_£ªfalse = ÍP
@@ -12,24 +14,12 @@ public class DoorControl_AD : MonoBehaviour
     void Update()
     {
             if (isOpen == true && isSwitch == true)
-            {
-
-                StartCoroutine(OpenDoor());
+            { 
+                OpenDoor();
             }
-            else
-            {
-                StopCoroutine(OpenDoor());
-            }
-
             if (isOpen == true && isSwitch == false)
             {
-
-                StartCoroutine(CloseDoor());
-
-            }
-            else
-            {
-                StopCoroutine(CloseDoor());
+               CloseDoor();
             }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -48,17 +38,24 @@ public class DoorControl_AD : MonoBehaviour
             }
         }
     }
-    IEnumerator OpenDoor()
+    //IEnumerator OpenDoor()
+    //{
+    //    door.transform.position = new Vector2(door.transform.position.x + -1f * Time.deltaTime, door.transform.position.y);
+    //    yield return new WaitForSeconds(2.4f);
+    //    isOpen = false;
+    //}
+    //IEnumerator CloseDoor()
+    //{
+    //    door.transform.position = new Vector2(door.transform.position.x + 1f * Time.deltaTime, door.transform.position.y);
+    //    yield return new WaitForSeconds(2.4f);
+    //    isOpen = false;
+    //}
+    void OpenDoor()
     {
-        door.transform.position = new Vector2(door.transform.position.x + -1f * Time.deltaTime, door.transform.position.y);
-        yield return new WaitForSeconds(2.4f);
-        isOpen = false;
+        door.transform.position = Vector3.MoveTowards(door.transform.position, target.transform.position, 0.005f);
     }
-    IEnumerator CloseDoor()
+    void CloseDoor()
     {
-        door.transform.position = new Vector2(door.transform.position.x + 1f * Time.deltaTime, door.transform.position.y);
-        yield return new WaitForSeconds(2.4f);
-        isOpen = false;
+        door.transform.position = Vector3.MoveTowards(door.transform.position, asUsual.transform.position, 0.005f);
     }
-
 }
