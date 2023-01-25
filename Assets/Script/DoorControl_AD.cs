@@ -60,4 +60,5 @@ public class DoorControl_AD : MonoBehaviour
         yield return new WaitForSeconds(2.4f);
         isOpen = false;
     }
+
 }
