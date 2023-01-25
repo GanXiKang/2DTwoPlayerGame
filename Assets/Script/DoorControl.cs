@@ -2,43 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorControl_AD : MonoBehaviour
+public class DoorControl : MonoBehaviour
 {
-    public GameObject door;
+    public Transform door;
     public Transform target;
     public Transform asUsual;
 
     private bool isOpen = false;
-    private bool isSwitch = false;                                   //true = È_£ªfalse = ÍP
-
-    void Start()
-    {
-        asUsual.transform.position = door.transform.position;
-    }
+    
     void Update()
     {
-            if (isOpen == true && isSwitch == true)
-            { 
-                OpenDoor();
-            }
-            if (isOpen == true && isSwitch == false)
-            {
-                CloseDoor();
-            }
+        if (isOpen == true)
+        {
+            OpenDoor();
+        }
+        else 
+        {
+            CloseDoor();
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            isOpen = true;
-
-            if (isSwitch == false)
+            if (isOpen == false)
             {
-                isSwitch = true;
+                isOpen = true;
             }
             else
             {
-                isSwitch = false;
+                isOpen = false;
             }
         }
     }
